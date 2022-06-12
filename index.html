@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>端午节页面</title>
+    <style>
+        body {
+            background: #efe8d6;
+        }
+        
+        #bocx {
+            margin: 0 auto;
+            width: 1280px;
+            height: 100%;
+        }
+        
+        .ah {
+            background-image: url(images/images/%E6%9C%AA%E6%A0%87%E9%A2%98-1_03.gif);
+            height: 42px;
+            width: 1231px;
+            font-size: 23px;
+            padding-left: 40px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        
+        .ah a {
+            float: left;
+            width: 170px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 42px;
+            color: #000;
+            font-family: "华文行楷";
+        }
+        
+        .ah a:hover {
+            background-image: url(images/images/955_02.gif);
+            border-radius: 13px;
+            text-decoration: underline;
+        }
+        
+        .ls {
+            float: right;
+            padding-right: 25px;
+        }
+        
+        .bu {
+            background: #CCC;
+            color: #000;
+            font-family: "方正舒体";
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        
+        .bu:hover {
+            background-image: url(images/images/88854_03.gif);
+            color: #000;
+            font-family: "方正舒体";
+            font-size: 18px;
+        }
+        
+        .ip {
+            border: 2px #999 solid;
+            border-radius: 15px;
+        }
+        
+        #con {
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .d {
+            border-radius: 8px;
+        }
+        
+        .lll {
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        
+        .hr {
+            width: 1300px;
+            border-top: #d3cdbd 10px dotted;
+        }
+        
+        .dy img {
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        
+        .dy {
+            background-image: url(images/images/%E8%83%8C%E6%99%AF.jpg);
+            background-repeat: no-repeat;
+            width: 1250px;
+            height: 375px;
+            position: absolute;
+            margin: 0 auto;
+            left: 0px;
+            right: 0px;
+            top: 330px;
+            bottom: px;
+        }
+        
+        .b {
+            border: 2px solid #690;
+            position: absolute;
+            top: 50px;
+            left: 27.5%;
+            opacity: 0;
+            transition: all 2s;
+            /*图片切换速度*/
+        }
+        
+        .b:nth-child(1) {
+            opacity: 1;
+        }
+        
+        .left {
+            /*轮播图样式*/
+            width: 36px;
+            height: 55px;
+            color: #00000050;
+            position: absolute;
+            top: 165px;
+            right: 69.5%;
+            border-radius: 0 5px 5px 0;
+            text-align: center;
+            line-height: 55px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .left a {
+            text-decoration: none;
+            color: #CCC;
+        }
+        
+        .left a:hover {
+            color: #000;
+        }
+        
+        .left:hover {
+            background: #00000050;
+            color: #fff;
+        }
+        
+        .right {
+            width: 36px;
+            height: 55px;
+            color: #00000050;
+            position: absolute;
+            top: 165px;
+            right: 29.5%;
+            border-radius: 0 5px 5px 0;
+            text-align: center;
+            line-height: 55px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .right a {
+            text-decoration: none;
+            color: #ccc;
+        }
+        
+        .right a:hover {
+            color: #000;
+        }
+        
+        .right:hover {
+            background: #00000050;
+            color: #fff;
+        }
+        
+        .dian ul {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        
+        .dian li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 6);
+            float: left;
+            margin-right: 10px;
+            background-clip: content-box;
+            border: 3px solid transparent;
+        }
+        
+        .dian li:hover {
+            background-color: #fff;
+            border: 3px solid rgba(255, 255, 255, 0.747)
+        }
+        
+        .dian {
+            position: absolute;
+            bottom: 88px;
+            right: 59%;
+        }
+        
+        .qy {
+            background-image: url(images/images/9999.jpg);
+            height: 280px;
+            width: 1250px;
+            position: absolute;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 27px;
+            botttom: 0;
+            float: right;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-right: 250px;
+        }
+        
+        .oo {
+            text-align: center;
+            font-size: 18px;
+            font-family: "楷体";
+            text-indent: 2em;
+            margin-left: 270px;
+        }
+        
+        .p {
+            text-decoration: underline;
+            color: #690;
+        }
+        
+        .zh {
+            background-image: url(images/images/9999.png);
+            width: 1300px;
+            height: 200px;
+            position: absolute;
+            margin: 0 auto;
+            top: 730px;
+            right: 0px;
+            bottom: 0;
+            left: 1px;
+            border-radius: 25px;
+        }
+        
+        h1 {
+            font-size: 30px;
+            margin: 10px;
+            padding: 15px;
+            text-decoration: underline;
+            color: #999;
+            font-family: "黑体";
+        }
+        
+        .a1 {
+            position: absolute;
+            left: 180px;
+            top: 10px;
+            border: 4px #000 solid;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .p1 {
+            position: absolute;
+            top: 150px;
+            left: 230px;
+            right: 0;
+            bottom: 0;
+            font-size: 18px;
+        }
+        
+        .a2 {
+            position: absolute;
+            left: 400px;
+            top: 10px;
+            border: 4px #000 solid;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .p2 {
+            position: absolute;
+            top: 150px;
+            left: 380px;
+            right: 0;
+            bottom: 0;
+            font-size: 18px;
+        }
+        
+        .a3 {
+            position: absolute;
+            left: 620px;
+            top: 10px;
+            border: 4px #000 solid;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .p3 {
+            position: absolute;
+            top: 150px;
+            left: 680px;
+            right: 0;
+            bottom: 0;
+            font-size: 18px;
+        }
+        
+        .a4 {
+            position: absolute;
+            left: 835px;
+            top: 10px;
+            border: 4px #000 solid;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .p4 {
+            position: absolute;
+            top: 150px;
+            left: 850px;
+            right: 0;
+            bottom: 0;
+            font-size: 18px;
+        }
+        
+        .a5 {
+            position: absolute;
+            left: 1045px;
+            top: 10px;
+            border: 4px #000 solid;
+            padding: 5px;
+            border-radius: 20px;
+        }
+        
+        .p5 {
+            position: absolute;
+            top: 150px;
+            left: 1080px;
+            right: 0;
+            bottom: 0;
+            font-size: 18px;
+        }
+        
+        .footer {
+            background-image: url(images/images/9999.png);
+            height: 50px;
+            width: 1400px;
+            position: relative;
+            top: 900px;
+            left: 15px;
+            bottom: 0;
+            right: 0;
+            text-align: center;
+            font-size: 20px;
+            font-family: "黑体";
+            margin: auto;
+            border-radius: 0 20px 0 20px;
+            padding-top: 10px;
+            border-top: 2px #000 solid;
+            border-bottom: 2px #000 solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bocx">
+        <div class="header">
+            <img src="images/8885.jfif" width="1271" height="343" class="lll" />
+            <nav class="ah">
+                <a href="other/端午节由来.html" target="_blank">端午节由来</a>
+                <a href="other/端午节习俗.html" target="_blank">端午节习俗</a>
+                <a href="other/粽子做法.html" target="_blank">粽子的做法</a>
+                <a href="other/关于端午的传说.html" target="_blank">关于端午的传说</a>
+                <div class="ls">
+                    <form>
+                        <label></label>
+                        <input type="text" class="ip" placeholder="“粽”香千里" />
+                        <input type="button" value="粽所周知" class="bu" />
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div id="con">
+        <hr class="hr" />
+        <div class="qy">
+            <h2>纪念屈原说</h2>
+            <p class="oo">传说屈原死后，楚国百姓哀痛异常，纷纷涌到汨罗江边去凭吊屈原。<br/>渔夫们划起船在江上来回打捞他的尸身。为了不让屈原的身体被鱼龙<br />虾蟹吃，人们纷纷往江里扔饭团、倒雄黄酒。<span class="p">以后，在每年的五月初五，<br />就有了龙舟竞渡、吃粽子、喝雄黄酒的风俗。</span></p>
+            <p class="oo">纪念屈原说在所有民间传说中流传最广，影响最深，谭绍兵学<br />者对这一说法进行了一系列论证。黄榴丹也认为<br />虽说法众多，但纪念屈原说仍占主流地位。<br /><br /> 《离骚》 《云中君》 《山鬼》 《河伯》
+            </p>
+        </div>
+        <br/>
+        <div class="dy">
+            <img src="images/images/轮播图素材/1.jpg" class="b" />
+            <img src="images/images/轮播图素材/2.jpg" class="b" />
+            <img src="images/images/轮播图素材/3.png" class="b" />
+            <img src="images/images/轮播图素材/4.jpg" class="b" />
+            <img src="images/images/轮播图素材/6.jpg" class="b" />
+            <div class="left"><a href="#">&lt;</a></div>
+            <div class="right"><a href="#">&gt;</a></div>
+            <div class="dian">
+                <ul>
+                    <li class="li"></li>
+                    <li class="li"></li>
+                    <li class="li"></li>
+                    <li class="li"></li>
+                    <li class="li"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="zh">
+            <h1>粽子包法</h1>
+            <img src="images/images/000000.png" class="a1" />
+            <p class="p1">准备粽子叶</p>
+            <img src="images/images/01.png" class="a2" />
+            <p class="p2">粽子叶折成一个漏斗的形状</p>
+            <img src="images/images/02.png" class="a3" />
+            <p class="p3">加入糯米</p>
+            <img src="images/images/03.png" class="a4" />
+            <p class="p4">加入自己喜欢的馅</p>
+            <img src="images/images/04.png" class="a5" />
+            <p class="p5">最后用绳子绑好</p>
+        </div>
+        <div class="footer">
+            Copyright 2021-6-14 此网页全部信息归广东省高新技术高级技工学校
+            <br />20计算1班李绅所有。
+        </div>
+    </div>
+    <script type="text/javascript" src="images/images/轮播图素材/js/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src='images/images/轮播图素材/js/js/bootstrap.min.js'></script>
+    <script>
+        $(function() {
+            var index = 0;
+            var f;
+            dsq();
+
+            function dsq() {
+                f = setInterval(function() {
+                    if (index == $(".b").length - 1) {
+                        index = 0;
+                        $(".b").css("opacity", "0");
+                        $(".b").eq(index).css("opacity", "1");
+                    } else {
+                        index++;
+                        $(".b").css("opacity", "0");
+                        $(".b").eq(index).css("opacity", "1");
+                    }
+                }, 3000)
+            }
+            $(".left").click(function() {
+                clearInterval(f);
+                if (index == 0) {
+                    index = $(".b").length - 1;
+                    $(".b").css("opacity", "0");
+                    $(".b").eq(index).css("opacity", "1");
+                    dsq();
+                } else {
+                    index--;
+                    $(".b").css("opacity", "0");
+                    $(".b").eq(index).css("opacity", "1");
+                    dsq();
+                }
+            })
+
+            $(".right").click(function() {
+                clearInterval(f);
+                if (index == $(".b").length - 1) {
+                    index = 0;
+                    $(".b").css("opacity", "0");
+                    $(".b").eq(index).css("opacity", "1");
+                    dsq();
+                } else {
+                    index++;
+                    $(".b").css("opacity", "0");
+                    $(".b").eq(index).css("opacity", "1");
+                    dsq();
+                }
+            })
+            $(".li").click(function() {
+                clearInterval(f);
+                var indexx = $(this).index();
+                index = indexx;
+                $(".b").css("opacity", "0");
+                $(".b").eq(index).css("opacity", "1");
+                dsq();
+            })
+        })
+    </script>
+    <audio src="images/姜美 - 离骚.mp3" hidden="true" loop="loop" autoplay="true"></audio>
+</body>
+
+</html>
